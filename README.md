@@ -23,7 +23,8 @@ open minimized, so it would just silently open on taskbar.
 
 ## Spotify Post Update Mod.bat
 
-This script is complementary to the Adless Spotify repo:
+This script is complementary to the Manual Installation of
+BlockTheSpot for Spotify:
 https://github.com/mrpond/BlockTheSpot
 
 During the Spotify update, the modified .dll file gets replaced,
