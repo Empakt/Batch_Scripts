@@ -2,7 +2,7 @@
 
 Random batch scripts I made to workaround problems and annoyances.
 
-///// No HDD Sleep.cmd \\\\\
+## No HDD Sleep.cmd
 
 When using HDD as a secondary drive it would
 constantly go to sleep mode (completely stop spinning)
@@ -21,11 +21,7 @@ took care of the problem I described above.
 I also made a shortcut of the script where I set it to
 open minimized, so it would just silently open on taskbar.
 
-\\\\\\\\\\\\\\//////////////
-
-|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\
-
-///// Spotify Post Update Mod.bat \\\\\
+## Spotify Post Update Mod.bat
 
 This script is complementary to the Adless Spotify repo:
 https://github.com/mrpond/BlockTheSpot
@@ -37,5 +33,3 @@ just run this script and it will do the work for you.
 There is a tiny bit of addition preparation for this to work,
 (making another copy of the .dll) which is described
 in the script itself.
-
-\\\\\\\\\\\\\\\\\\\///////////////////
