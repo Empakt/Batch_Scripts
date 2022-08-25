@@ -21,7 +21,7 @@ took care of the problem I described above.
 I also made a shortcut of the script where I set it to
 open minimized, so it would just silently open on taskbar.
 
-## Spotify Post Update Mod.bat
+## Spotify Update Fix.bat
 
 This script is complementary to the Manual Installation of
 BlockTheSpot for Spotify:
