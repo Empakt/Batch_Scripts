@@ -48,7 +48,7 @@ do{
 		Write-Host "`nDestination username: " -NoNewline
 		Write-Host "$destinationUser`n" -ForegroundColor green
 		
-		# Printing the count of exsiting groups on the destination user
+		# Printing the count of existing groups on the destination user
 		Write-Host "Count of existing groups" `
 		"on the destination user: " -NoNewline -ForegroundColor yellow
 		Write-Host $destinationUserExistingGroupCount -ForegroundColor green
