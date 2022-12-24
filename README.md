@@ -1,6 +1,6 @@
-# Batch_Scripts
+# Windows_Scripts
 
-Random Windows scripts I made to workaround problems and annoyances.
+Random Windows scripts I made to workaround and automatize problems and annoyances.
 
 ## Copying AD user groups to new user.ps1
 
@@ -8,7 +8,7 @@ Random Windows scripts I made to workaround problems and annoyances.
 When adding a new user to the local Microsoft Active Directory, few things need to be configured in tabs like Organization, that's all quick and easy to do in 1 minute, but then when you want to add all the group memberships to control to which SMB shares and folders the user has what rights for access, which there can be like 50 of, doing it manually sucks big time. Marking the groups' names, copy-pasting them one-by-one is not an enjoyable task to do.
 
 ### The Solution
-I made this script that automatizes the addition of group memberships from a chosen source AD user to a destination AD user, there is also error handling in case you input the wrong username (you can try again how many times you want), every command and line is commented to make it easy to understand and even when the script is running, the output is nicely colored and divided so it's comprehensible.
+I made this script that automatizes the addition of group memberships from a chosen source AD user to a destination AD user, there is also error handling in case you input the wrong username (you can just try inputting it again), every command and line is commented to make it easy to understand and even when the script is running, the output is nicely colored and divided so it's comprehensible.
 
 ## No HDD Sleep.cmd
 
