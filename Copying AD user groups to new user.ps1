@@ -40,7 +40,7 @@ do{
 	try{
 		
 		# Command to check whether the username exists or will throw an error,
-		# also used on line 70 to show the already existing group count:
+		# also used later to show the already existing group count:
 		$destinationUserExistingGroupCount = (Get-ADUser -Identity "$destinationUser" `
 		-Properties memberof | Select-Object -ExpandProperty memberof).Count
 		
