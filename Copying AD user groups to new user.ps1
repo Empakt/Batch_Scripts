@@ -40,18 +40,13 @@ do{
 	try{
 		
 		# Command to check whether the username exists or will throw an error,
-		# also used just below to show the already existing groups count:
+		# also used on line 70 to show the already existing group count:
 		$destinationUserExistingGroupCount = (Get-ADUser -Identity "$destinationUser" `
 		-Properties memberof | Select-Object -ExpandProperty memberof).Count
 		
 		# Confirmation for the user what destination username the user typed:
 		Write-Host "`nDestination username: " -NoNewline
 		Write-Host "$destinationUser`n" -ForegroundColor green
-		
-		# Printing the count of existing groups on the destination user
-		Write-Host "Count of existing groups" `
-		"on the destination user: " -NoNewline -ForegroundColor yellow
-		Write-Host $destinationUserExistingGroupCount -ForegroundColor green
 	}
 	catch{
 		Write-Host "`nError occured: $error`nTry again`n" -ForegroundColor red
@@ -59,15 +54,22 @@ do{
 }while ($error)
 
 # Confirmation for the user what groups are saved and will be copied:
-Write-Host "`n---------- Start of source user's groups ----------" -ForegroundColor yellow
+Write-Host "---------- Start of source user's groups ----------" -ForegroundColor yellow
 
 $sourceUserGroups
 
+# Printing the count of groups on the source user from which the groups are copied:
 Write-Host "---------- End of source user's groups ----------" `
 "`n`nCount of groups on the source user: " -NoNewline -ForegroundColor yellow
 Write-Host $sourceUserGroups.Count -ForegroundColor green
-Write-Host "`nMake sure that everything is correct" `
-"and then proceed`nYou can exit the script with CTRL+C`n" -ForegroundColor yellow
+
+# Printing the count of already existing groups on the destination user:
+Write-Host "`nCount of already existing groups" `
+"on the destination user: " -NoNewline -ForegroundColor yellow
+Write-Host $destinationUserExistingGroupCount -ForegroundColor green
+
+Write-Host "`nMake sure that everything is correct and then proceed with writing" `
+"the groups`nYou can still exit the script with CTRL+C`n" -ForegroundColor yellow
 
 # Pausing the script so that the user can confirm everything is correct:
 pause
